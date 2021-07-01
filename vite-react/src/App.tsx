@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
-// const Button = React.lazy(() => import("foo_app1/Button"));
-// const Header = React.lazy(() => import("foo_rollup_spa/Header"));
+const Button = React.lazy(() => import("foo_app1/Button"));
+const Header = React.lazy(() => import("foo_rollup_spa/Header"));
 
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + federation! +1+2</p>
-        {/* <React.Suspense fallback="Loading App...">
+        <p>Hello Vite + federation! +1+2+3</p>
+        <React.Suspense fallback="Loading App...">
           <Header />
           <Button />
-        </React.Suspense> */}
+        </React.Suspense>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}

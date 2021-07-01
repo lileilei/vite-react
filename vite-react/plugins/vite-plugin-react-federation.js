@@ -121,7 +121,6 @@ export default {
 		},
 
 		load(...args) {
-			console.log("load::::,",args[0])
 			const v = virtualMod.load.call(this, ...args);
 				if (v) {
 					return v;
@@ -129,8 +128,7 @@ export default {
 	
 		},
 
-		transform(code,id) {
-			console.log(id)
+		transform(code) {
 			let ast = null;
 				try {
 					ast = this.parse(code);
