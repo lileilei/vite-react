@@ -13,3 +13,9 @@ cd vite-react      yarn    npm start
 ```
 http://localhost:3000
 ```
+
+
+#遗留问题
+
+1.npm run build 无效，生成空代码
+2.build成功后，html的模版还需要再修改
