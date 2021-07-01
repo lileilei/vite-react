@@ -17,5 +17,5 @@ http://localhost:3000
 
 #遗留问题
 
-1.npm run build 无效，生成空代码
-2.build成功后，html的模版还需要再修改
+1.npm run build 目前还未兼容，需要手动放开 script=“modlue” 才可以
+2.build成功后，html的模版还需要再修改才能访问，
