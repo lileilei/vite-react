@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  
+      <!-- <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script> -->
+      <script src="./node_modules/react/umd/react.production.min.js"></script>
+      <script src="./node_modules/react-dom/umd/react-dom.production.min.js"></script>
+
+      <!-- <script type="systemjs-importmap">
+        {
+          "imports": {
+            "react": "./node_modules/react/umd/react.production.min.js",
+            "react-dom": "./node_modules/react-dom/umd/react-dom.production.min.js",
+            "rwebpackremote": "http://localhost:8081/remoteEntry.js",
+            "rollup_spa": "http://localhost:8080/remoteEntry.js"
+          }
+        }
+      </script>
+      <script>
+        System.register(['react','react-dom'], function (_export, _context) {
+            var dep;
+            return {
+              setters: [function (_dep) {
+                dep = _dep;
+              }],
+              execute: function () {
+                var script = document.createElement("script");  //创建一个script标签
+                script.type = "module";
+                script.src = "/src/main.tsx";
+                document.body.appendChild(script)
+              }
+            };
+          });
+      </script> -->
+      <script type="module" src="/src/main.tsx"></script>
+
+  </body>
+</html>
