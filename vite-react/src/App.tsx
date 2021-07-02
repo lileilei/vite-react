@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + federation! +1+2+3</p>
+        <p>Hello Vite + federation! +1+2+3+4</p>
         <React.Suspense fallback="Loading App...">
           <Header />
           <Button />

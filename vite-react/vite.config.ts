@@ -4,6 +4,7 @@ import  {  viteExternalsPlugin  }  from  'vite-plugin-externals'
 import pkg from "./package.json"
 
 import federation from './plugins/vite-plugin-react-federation';
+import transformHtml from './plugins/vite-plugin-transform-html';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -28,6 +29,7 @@ export default defineConfig({
           requiredVersion: pkg.dependencies["react-dom"],
         }, 
       },
-    })
+    }),
+    transformHtml(),
   ]
 })
